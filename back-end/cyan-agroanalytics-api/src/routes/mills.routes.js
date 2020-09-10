@@ -7,7 +7,7 @@ const _ctrl = require('../controllers/MillsController')
 route.post('/', _ctrl.post)
 route.get('/', _ctrl.get)
 route.get('/:id', _ctrl.getById)
-// route.put()
-// route.delete()
+route.put('/:id', _ctrl.put)
+route.delete('/:id', _ctrl.delete)
 
 module.exports = route
