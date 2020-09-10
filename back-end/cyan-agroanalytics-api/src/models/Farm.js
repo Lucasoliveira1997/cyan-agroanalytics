@@ -1,15 +1,17 @@
 const Model = require('sequelize').Model
 const DataTypes = require('sequelize').DataTypes
-class Mill extends Model {
+
+class Farm extends Model {
 
     static init(sequelize) {
         super.init({
+            code: DataTypes.INTEGER,
             name: DataTypes.STRING,
-            harvests: DataTypes.INTEGER 
+            fields: DataTypes.INTEGER
         }, {
             sequelize
         })
     }
 }
 
-module.exports = Mill
+module.exports = Farm
